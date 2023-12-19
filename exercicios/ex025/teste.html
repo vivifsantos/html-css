@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Testando formulários</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="get" oninput="itot.value = Number(ipreco.value) * Number(iqtd.value)">
         <p>
             <label for="ifoto">Foto de perfil</label>
             <input type="file" name="foto" id="ifoto" accept="image/*">
@@ -67,7 +67,26 @@
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
+        </p><br><br>
+
+        <p>
+            <label for="iprod">Produto:</label>
+            <input type="text" name="prod" id="iprod">
         </p>
+        <p>
+            <label for="ipreco">Preço: R$</label>
+            <input type="number" name="preco" id="ipreco">
+        </p>
+        <p>
+            <label for="iqtd">Quantidade</label>
+            <input type="number" name="qtd" id="iqtd">
+        </p>
+        <p>
+            <label for="itot">Total: R$</label>
+            <output name="tot" id="itot">0
+            </output>
+        </p>
+        <p><input type="submit" value="Enviar"></p>
 
 
 
