@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href= "imagens/favicon (1).ico">
-    " type="image/x-icon">
+    <link rel="shortcut icon" href= "imagens/favicon (1).ico"type="image/x-icon">
+    
     <title>Teste</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -193,6 +193,20 @@
         <dd>Linguagem de marcação utilizada para criar o conteúdo de sites</dd>
     </dl>
 
+    <h1>Desafio das tags</h1>
+
+    <p>Em HTML5 podemos inserir os elementos da lista a seguir. Passe o mouse sobre os termos para decobrir qual tag deverá utilizar em cada caso.</p>
+
+    <ul>
+        <li><abbr title="Use a tag &lt;p&gt;">Parágrafo</abbr></li>
+        <li><abbr title="Use a tag &lt;h&gt;">Títulos</abbr></li>
+        <li><abbr title="Use a tag &lt;img&gt;">Imagens</abbr></li>
+        <li><abbr title="Use a tag &lt;abbr&gt;">Abreviações</abbr></li>
+        <li><abbr title="Use a tag &lt;code&gt;">Código-fonte</abbr></li>
+        <li><abbr title="Use a tag &lt;ol&gt;">Listas numeradas</abbr></li>
+        <li><abbr title="Use a tag &lt;ul&gt;">Listas com demarcadores</abbr></li>
+    </ul>
+
     <h1>Links e Âncoras</h1>
 
     <a href="https://www.w3schools.com/html/" hreflang="en" target="_blank">Site da W3Schools (em Inglês)</a>
@@ -214,6 +228,30 @@
         <li><a href="livro/pg12.zip" download="meulivro.zip" type="application/zip">Livro compactado em zip</a></li>
     </ul>
 
+    <h1>Imagens Flexíveis</h1>
+
+    <p>Tente abrir esse site em vários dispositivos diferentes ou aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="A imagem flexível funciona">
+    </picture>
+
+    <h1>Reproduzindo áudios</h1>
+
+    <audio preload="auto" controls autoplay> 
+    <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    <p>Seu navegador não suporta áudio <a href="midia/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg"></a></p>
+    </audio>
+
+    <h1>Incorporando vídeos externos</h1>
+
+    <h2>Incorporando vídeo do Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oT7PJ8iDnjs?si=SoN2fQz_1G5457uX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h2>Incorporando vídeo do Vímeo</h2>
+    <iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&byline=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 </body>
 </html>
