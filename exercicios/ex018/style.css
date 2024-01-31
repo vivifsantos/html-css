@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+@font-face {
+    font-family: 'Love';
+    src: url('fontes/love\ story\ ttf.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Love1';
+    src: url('fontes/Lovely\ Valentine\ Sans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+}
+
+body{
+    font-family: 'Love1';
+    font-size: 2em;
+}
+
+h1{
+    font-family: 'Love';
+    font-size: 4em;
+}
+
