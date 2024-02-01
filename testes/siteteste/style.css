@@ -7,5 +7,42 @@
     background-color: peachpuff;
 }
 header{
+    background-color: snow;
     width: 100vw; 
+    padding: 20px;
+    border: 0px 1px 1px rgba(0, 0, 0, 0.559);
+    border-color: rgba(0, 0, 0, 0.233);
+    border-style: solid;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.23);
+    
+}
+header > h1{
+    text-align: center;
+    background-color: snow;
+
+}
+nav{
+    background-color: snow;
+}
+nav > a{
+    
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.515);
+    padding: 5px;
+    
+}
+a:hover{
+    background-color: white;
+    color: black;
+}
+main{
+    width: 600px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+
+}
+section{
+    
 }
