@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@700;800&display=swap');
+
+
+/*Paleta de cores
+#75a62a
+#265200
+#424242
+#212121 */
+
+:root{
+    --cor01:#75a62a;
+    --cor02:#265200;
+    --cor03:#424242;
+    --cor04:#212121;
+
+    --fonte-h1: "Biryani", sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    margin: 16px;
+    height: 100px;
+
+}
+header > h1 {
+    font-size: 45px;
+    color: #75a62a;
+
+}
+header > p {
+    font-size: 1em;
+    color: #424242a1;
+    font-weight: bold;
+}
+nav{
+    height: 40px;
+}
+nav > a{
+    font-size: 14px;
+    font-weight: bold;
+    color: #265200;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+}
+a#loja {
+    
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #75a62a;
+    border-radius: 20px;
+}
+a#loja:hover{
+    background-color: #265200;
+}
+main{
+    
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    background-image: linear-gradient(to bottom, rgba(202, 207, 219, 0.23), white);
+}
+main  h1{
+    font-size: 2.5em;
+    font-family: var(--fonte-h1);
+    padding: 16px;
+}
+main img {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+}
+main p{
+    color: #424242;
+    text-align: justify;
+    font-size: 1.3em;
+    line-height: 1.7em;
+    margin: auto;
+    padding: 20px;
+}
+
