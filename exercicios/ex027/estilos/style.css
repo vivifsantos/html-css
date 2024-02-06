@@ -26,20 +26,24 @@
 header{
     margin: 16px;
     height: 100px;
-
+    
 }
 header > h1 {
     font-size: 45px;
+    font-weight: bold;
     color: #75a62a;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.159);
 
 }
 header > p {
     font-size: 1em;
     color: #424242a1;
     font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.159);
 }
 nav{
     height: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
 }
 nav > a{
     font-size: 14px;
@@ -51,7 +55,7 @@ nav > a{
 }
 a#loja {
     
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: bold;
     color: white;
     text-align: center;
@@ -59,6 +63,10 @@ a#loja {
     text-decoration: none;
     background-color: #75a62a;
     border-radius: 20px;
+}
+a#lavadoras{
+    color: #75a62a;
+    text-decoration: none;
 }
 a#loja:hover{
     background-color: #265200;
@@ -69,12 +77,13 @@ main{
     max-width: 1000px;
     margin: auto;
     padding: 40px;
-    background-image: linear-gradient(to bottom, rgba(202, 207, 219, 0.23), white);
+    background-image: linear-gradient(to bottom, rgba(166, 184, 224, 0.164), white);
 }
 main  h1{
     font-size: 2.5em;
     font-family: var(--fonte-h1);
     padding: 16px;
+    font-weight: bolder;
 }
 main img {
     margin: auto;
@@ -89,4 +98,26 @@ main p{
     margin: auto;
     padding: 20px;
 }
+footer{
+    height: 15px;
 
+}
+footer a{
+    font-size: 1em;
+    padding: 15px;
+    color: #212121;
+    text-align: center;
+    font-weight: bold;
+    
+}
+footer a:hover{
+    text-decoration: none;
+}
+table{
+
+}
+td, th{
+    padding: 10px;
+    font-size: 1.3em;
+    text-align: center;
+}
