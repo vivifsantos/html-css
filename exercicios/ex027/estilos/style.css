@@ -27,6 +27,7 @@ header{
     margin: 16px;
     height: 100px;
     
+    
 }
 header > h1 {
     font-size: 45px;
@@ -44,6 +45,7 @@ header > p {
 nav{
     height: 40px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    posi
 }
 nav > a{
     font-size: 14px;
@@ -98,6 +100,15 @@ main p{
     margin: auto;
     padding: 20px;
 }
+table{
+    margin: 20px;
+
+}
+td, th{
+    padding: 10px;
+    font-size: 1.3em;
+    text-align: center;
+}
 footer{
     height: 15px;
 
@@ -112,12 +123,4 @@ footer a{
 }
 footer a:hover{
     text-decoration: none;
-}
-table{
-
-}
-td, th{
-    padding: 10px;
-    font-size: 1.3em;
-    text-align: center;
 }
