@@ -3,93 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela</title>
+    <title>Teste de tabela</title>
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        table{
-            width: 600px;
+        table {
+            width: 700px;
             border-collapse: collapse;
-            margin: auto;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+            background-color: rgba(128, 128, 128, 0.334);
+            border-radius: 10px 10px 0px 0px;
+        }
+        td , th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        col.cnome {
+            background-color: lightblue;
+        }
+        col.csexo {
+            background-color: blueviolet;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: lightgrey;
+        }
+        div#container {
+            overflow-x:auto;
         }
         
-        tr, td, th{
-            border: 1px solid black;
-            padding: 5px;
-        }
-        thead, tr.media{
-            background-color: gray;
-        }
-        td.num{
-            text-align: center;
-        }
     </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th scope="col" rowspan="2">Área</th>
-                <th scope="col" rowspan="2">Disciplina</th>
-                <th scope="col" colspan="2">Notas</th>
-                <th scope="col" rowspan="2">Média</th>
-            </tr>
-            <tr>
-                <th scope="col">Nota 1</th>
-                <th scope="col">Nota 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row" rowspan="4">Exatas</th>
-                <td>Matemática</td>
-                <td class="num">10</td>
-                <td class="num">10</td>
-                <td class="num">10</td>
-            </tr>
-            <tr>
-                <td>Física</td>
-                <td class="num">10</td>
-                <td class="num">10</td>
-                <td class="num">10</td>
-            </tr>
-            <tr>
-                <td>Química</td>
-                <td class="num">10</td>
-                <td class="num">10</td>
-                <td class="num">10</td>
-            </tr>
-            <tr>
-                <td>Biologia</td>
-                <td class="num">10</td>
-                <td class="num">10</td>
-                <td class="num">10</td>
-            </tr>
-            <tr class="media">
-                <th scope="row" colspan="4" class="media">Média de Exatas</th>
-                <td class="num">10</td>
-            </tr>
-            <tr>
-                <th scope="row" rowspan="2">Humanas</th>
-                <td>História</td>
-                <td class="num">10</td>
-                <td class="num">10</td>
-                <td class="num">10</td>
-            </tr>
-            <tr>
-                <td>Geografia</td>
-                <td class="num">10</td>
-                <td class="num">10</td>
-                <td class="num">10</td>
-            </tr>
-            <tr class="media">
-                <th scope="row" colspan="4" >Média de Humanas</th>
-                <td class="num">10</td>
-            </tr>
-
-        </tbody>
-    </table>
-    
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo" span="4">
+                <col class="cidade">
+                <col class="cprof">
+            </colgroup>
+            <caption>
+                Cadastro
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Profissão</th>
+                    <th scope="col">Endereço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maria da Silva Pereira</td>
+                    <td>F</td>
+                    <td>34</td>
+                    <td>Jornalista</td>
+                    <td>Rua das Flores 1200</td>
+                </tr>
+                <tr>
+                    <td>José dos Santos Silva</td>
+                    <td>M</td>
+                    <td>41</td>
+                    <td>Programador</td>
+                    <td>Rua Marechal Deodoro 2100</td>
+                </tr>
+                <tr>
+                    <td>Cláudia da Costa</td>
+                    <td>F</td>
+                    <td>30</td>
+                    <td>Enfermeira</td>
+                    <td>Rua Visconde de Nacar 450</td>
+                </tr>
+                <tr>
+                    <td>João Gonçalves da Silva</td>
+                    <td>M</td>
+                    <td>48</td>
+                    <td>Vendedor</td>
+                    <td>Rua da Glória 340</td>
+                </tr>
+                <tr>
+                    <td>Gustavo Guanabara</td>
+                    <td>M</td>
+                    <td>42</td>
+                    <td>Professor</td>
+                    <td>Rua dos Narcisos 5690</td>
+                </tr>
+                <tr>
+                    <td>Helena Xavier Guimaraes</td>
+                    <td>F</td>
+                    <td>39</td>
+                    <td>Nutricionista</td>
+                    <td>Rua 24 de maio 1230</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
