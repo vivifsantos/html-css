@@ -330,5 +330,67 @@
     <div class="quadrado" id="q2"></div>
     <div class="quadrado" id="q3"></div>
 
+    <h1>Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="20" autocomplete="name"></p>
+        
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome" required maxlength="30" autocomplete="name"></p>
+        
+        <p><input type="submit"value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+
+    </form>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        
+        <fieldset>
+            <legend>
+                Cores Favoritas
+            </legend>
+            <input type="checkbox" name="amarelo" id="iamarelo"><label for="iamarelo">Amarelo</label> <br>
+            <input type="checkbox" name="azul" id="iazul"><label for="iazul">Azul</label> <br>
+            <input type="checkbox" name="verde" id="iverde"><label for="iverde">Verde</label> <br>
+            <input type="checkbox" name="vermelho" id="ivermelho"><label for="ivermelho">Vermelho</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <label for="inum">Número:</label>
+        <input type="range" name="num" id="inum" min="1" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+        <output id="ival">5</output>
+
+    </form>
+
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="ifoto">Foto de perfil:</label>
+            <input type="file" name="foto" id="ifoto"> <br>
+        </p>
+
+        <p>
+            <label for="iidade">Idade:</label>
+            <input type="number" name="idade" id="iidade" min="1" max="120">
+        </p>
+
+        <p>
+            <fieldset style="width: 100px;">
+                <legend>Sexo</legend>
+                <p><input type="radio" name="sexo" id="imasc"><label for="imasc">Masculino</label><br>
+                
+                <input type="radio" name="sexo" id="ifem">
+                <label for="ifem">Feminino</label></p>
+            </fieldset>
+        </p>
+        
+    </form>
+
 </body>
 </html>
