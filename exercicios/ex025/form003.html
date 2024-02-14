@@ -33,5 +33,36 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
+
+    <h1>Teste de formulário</h1>
+
+   <form action="cadastro.php" method="get" autocomplete="off">
+
+    <p><label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome" minlength="5" maxlength="30" size="20"  placeholder="nome completo" autocomplete="name">
+    </p>
+    <p>
+        <label for="imedia">Média:</label>
+        <input type="number" name="media" id="imedia" min="0" max="10"size="5"step="0.5" placeholder="0 a 10" required>
+    </p>
+    <p>
+        <label for="imes">Período letivo</label>
+        <input type="month" name="mes" id="imes">
+    </p>
+    <p>
+        <label for="idia">Dia da prova</label>
+        <input type="date" name="dia" id="idia">
+    </p>
+    <p>
+        <label for="ihora">Horário da prova</label>
+        <input type="time" name="hora" id="ihora">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+   </form>
+
+
 </body>
 </html>
