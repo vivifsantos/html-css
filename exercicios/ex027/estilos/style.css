@@ -67,39 +67,34 @@ section#redes-sociais img:hover{
     transition: transform .3s, border 1s;
 }
 nav{
-    text-align: left;
-    height: 150px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    text-align: center;
+    height: 180px;
+    
     
 }
-nav > a{
+nav > a{    
     display: block;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: bold;
     color: #265200;
-    
+    border-radius: 20px;
     padding: 10px;
     text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.162);
 }
-a#loja {
-    
-    width: 70px;
-    font-weight: bold;
+nav a:hover {
     color: white;
-    
-    padding: 10px 20px;
-    text-decoration: none;
-    background-color: #75a62a;
-    border-radius: 20px;
+    background-color: var(--cor01);
+    border: 2px solid rgba(255, 255, 255, 0.599);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.604);
+    transition: transform .3s, border 1s;
 }
+
 a#lavadoras{
     color: #75a62a;
     text-decoration: none;
 }
-a#loja:hover{
-    background-color: #265200;
-}
-
 main{
     
     min-width: 300px;
@@ -107,6 +102,7 @@ main{
     margin: auto;
     padding: 40px;
     background-image: linear-gradient(to bottom, rgba(166, 184, 224, 0.164), white);
+    border-bottom: 1px solid #2652003c;
 }
 main  h1{
     font-size: 2em;
@@ -143,6 +139,7 @@ td, th{
 footer{
     
     height: 15px;
+    
 
 }
 footer a{
