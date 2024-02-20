@@ -14,6 +14,10 @@ header h1 {
 header p {
     font-size: 1.3em;
 }
+section#redes-sociais img {
+    
+    width: 40px;
+}
 main h1 {
     font-size: 2.5em;
 }
