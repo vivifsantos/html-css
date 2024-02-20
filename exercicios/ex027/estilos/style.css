@@ -67,25 +67,26 @@ section#redes-sociais img:hover{
     transition: transform .3s, border 1s;
 }
 nav{
-    height: 40px;
+    text-align: left;
+    height: 150px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.274);
     
 }
 nav > a{
-    
-    font-size: 12px;
+    display: block;
+    font-size: 0.8em;
     font-weight: bold;
     color: #265200;
-    text-align: center;
+    
     padding: 10px;
     text-decoration: none;
 }
 a#loja {
     
-    font-size: 0.9em;
+    
     font-weight: bold;
     color: white;
-    text-align: center;
+    
     padding: 10px 20px;
     text-decoration: none;
     background-color: #75a62a;
