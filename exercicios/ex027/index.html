@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    
 </head>
 <body>
     <header>
@@ -13,7 +15,10 @@
         <p>Bem pensado</p>
     
     </header>
-    <nav>
+    <span id="burguer" class="material-icons" onclick="clickMenu()">
+        menu
+        </span>
+    <nav id="itens">
         <a class="menu" href="simplesassim.html" target="_blank" rel="next">Simples assim</a>
         <a class="menu" href="bempensadopravoce.html" target="_blank" rel="next">Bem pensado pra você</a>
         <a class="menu" href="ihhhagora.html" target="_blank" rel="next">Ihhh agora?</a>
@@ -111,5 +116,14 @@
     
         <p>Site desenvolvido para teste</p>
     </footer>
+    <script>
+        function clickMenu() {
+           if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+           } else{
+            itens.style.display = 'block'
+           }
+        }
+    </script>
 </body>
 </html>

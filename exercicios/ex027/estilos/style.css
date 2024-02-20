@@ -65,6 +65,9 @@ section#redes-sociais img:hover{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.604);
     transition: transform .3s, border 1s;
 }
+nav {
+    display: none;
+}
 nav{
     text-align: center;
     height: 210px;
@@ -91,6 +94,20 @@ nav a.menu:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.604);
     transition: transform .3s, border 1s;
     
+
+}
+span#burguer{
+    background-color: var(--cor01);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+
+}
+span#burguer:hover{
+    background-color: white;
+    color: black;
 
 }
 
