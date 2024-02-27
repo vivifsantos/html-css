@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Flex</title>
+    <style>
+
+        .item {
+            margin: 5px;
+            padding: 5px;
+            background: #447;
+            text-align: center;
+            font-size: 1em;
+            color: white;
+        }
+
+        .container {
+            max-width: 400px;
+            margin:0 auto;
+            border: 1px solid black;
+            flex-wrap: nowrap;
+            
+           
+            
+        }
+        .flexivel {
+            display: flex;
+        }
+
+        .vertical {
+            flex-direction: column
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container flexivel">
+        <div class="item">Opção 1</div>
+        <div class="item">Opção 2</div>
+        <div class="item">Opção 3</div>
+        <div class="item">Opção 4</div>
+        <div class="item">Opção 5</div>
+        <div class="item">Opção 6</div>
+        
+        
+    </div>
+</body>
+</html>
